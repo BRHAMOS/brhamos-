@@ -1,138 +1,316 @@
 <!DOCTYPE html>
 <html>
-
+  <title>India.in:mobiles</title>
 <head>
-  <title>registration form.in</title>
-  <style>
-    h1{
-      text-transform:uppercase;
-      text-align: center;
-      font-size: 70px;
-      text-decoration: underline;
-      font-style:italic;
-      background-color:darkcyan;
-      outline:0;
-      
-      
-    }
-    nav{
-      text-align:center;
-    }
-    nav a{
-      font-size: 50px;
-      color:black;
-    }
+<style>
+
   
-    .form-field{
-      text-align: center ;
-    }
-    
-    label{
-      display:block;
-    }
-    
-    input[type="submit"]:hover{
-      background-color:grey;
-      color:white;
-    }
-    
-    form{
-      font-weight:700;
-  background: linear-gradient(to right, white, lightblue);
-  padding: 20px;
-  border-radius: 10px;
 }
-
-
-    
-    
-    
-  </style>
-</head>
-
-
-  <body>
-  <h1>your registration form</h1>
-  <header>
-    
-    
-    
-    
-    
-    
-    <nav>
-      <a href="home.html">home</a>
-      <a href="about us.html">about us</a>
-      <a href="contact.html">contact </a>
-    </nav>
-    </header>
-    <main>
-    <form>
-      <div class="form-field">
-      <label for="username">username:</label>
-      <input type="text" id="username" name="username"><br>
-      
-      <label for="password">password:</label>
-      <input type="password" id="password" name="password"><br>
-      <label for="email"> email:    </label>
-      <input type="email" id="email" name="email"><br>
-      <label>gender:</label>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">male</label><br>
-      
-      
-      <input type="radio" id="female"
-      name="gender" value="female">
-      <label for="female">female</label><br>
-      
-      <input type="radio" id="no-say" name="gender" value="no-say">
-      <label for ="no-say">prefer not to say</label>
-      
-      <label for="dob">date of birth:</label>
-      <input type="date" id="dob" name="dob"><br>
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" min="1" max="100"><br>
-      <label for="courses">select-courses</label>
-      <select id="courses" name="courses">
-      <option value="">---choose a course---</option>
-      <option value="bca">BCA</option>
-      <option value="bsc">BSC</option>
-      <option value="b.com">B.COM</option>
-      <option value="ba">BA</option>
-      <option value="bba">BBA</option>
-      </select><br><br>
-      
-      <label for="skill">select skill:</label>
-      <select id="skill" name="skill">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="java-script">JAVA-SCRIPT</option>
-        <option value="ms-word">MS-WORD</option>
-        <option value="excel">EXCEL</option>
-        <option value="tally">TALLY</option>
-      
-        </select>
-        </div>
-        <br>
-        
-        <div class="form-field" style="text-align: center;">
-  <input type="submit" value="Submit">
-</div>
-
-        
-      
-      
-      
-      
-      
-        
-      
-      
-    </form>
-    </main>
-    
-      
-    
+#content{
+  display:flex;
+  justify-content:center;
   
+}
+  img{
+    display:block;
+    margin-bottom:10px;
+  }
+  a{
+    text-decoration:none;
+  }
+  
+  #container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(4,100px);
+    border:none;
+    gap:10px;
+    padding:10px;
+  }
+  
+  #box1{
+    padding:10px;
+    background-color:none;
+    display:flex;
+    border:none
+    
+  }
+  .content{
+    display:flex;
+    margin-top:20px;
+    gap:20px;
+    justify-content:space-around;
+  
+    
+  }
+  .box{
+    text-align:center;
+    margin-top:20px;
+    border:2px solid black;
+    height:auto;
+    width:195px;
+    line-height:60px;
+    border-radius:8px;
+    background-size:cover;
+  }
+  .box img{
+    height:160px;
+    width:170px;
+    object-fit:contain;
+    margin-bottom:10px;
+    margin-top:4px;
+  }
+  .box p{
+    font-weight:bold;
+  }
+  .big-box{
+    border:1px solid black;
+    border-radius:none;
+    width:300px;
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    gap:10px
+  }
+  .row{
+    display:flex;
+    border-bottom:1px solid grey;
+    align-items:center;
+    padding:10px;
+  }
+  .row:last child{
+    border-bottom:none;
+  }
+  . highlight{
+    color:pink;
+  }
+  #quantity{
+    border-radius:8px;
+    border:2px solid black;
+    padding:4px;
+  }
+  .container3{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .order2{
+    border:2px solid orange ;
+    padding:12px 25px;
+    font-size:25px;
+    color:black;
+    border-radius:32px;
+    text-align:center;
+    margin-top:5px;
+    background-color: orange ;
+  }
+  .order2:hover{
+    background-color:yellow;
+    color: black 
+  }
+  #container4{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,100px);
+    border:none;
+    gap:10px
+    padding:10px;
+  }
+  #item1{
+    margin-left:10px;
+    margin-top:20px;
+    font-size:150%;
+  }
+  #item2{
+    margin-top:20px;
+    font-size:150%;
+    font-weight:bold;
+  }
+  #item3{
+    margin-left:10px;
+    font-size:150%;
+  }
+  #item4{
+    margin-top::20px;
+    font-size:150%;
+    font-weight:none;
+  }
+  .Checkbox-label{
+    font-size:17px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px
+    
+  }
+  .Checkbox-label input[type="checkbox"] {
+    width:25px;
+    height:25px;
+    cursor:pointer;
+    margin-left:8px;
+    
+  }
+  #box,#box2,#box3,#box4,#box5,#box6,#box7{
+    color:navy;
+  }
+  #box:hover{
+    color:black;
+  }
+  h3 {
+    font-weight:bold;
+    text-size:7px;
+  }
+  h4 {
+    font-weight:bold;
+    text-size:7px
+    font-style:italic;
+  }
+  select{
+    width:200px;
+    height:50px;
+    font-size:18px;
+    padding:5px;
+    text-align:center;
+  }
+  .highlight{
+    color:red;
+    font-weight:bold;
+  }
+  #style2{
+    color:red;
+    font-weight:bold;
+  }
+  .delivery{
+    font-weight:bold;
+    font-size:25px;
+  }
+  .deli2{
+    color: forestgreen;
+    font-weight:bold;
+  }
+</style>
+</head>
+<body>
+  <main>
+  <h1>Get best mobile deals..</h1>
+  <div id="content">
+    <img src=image.jpg alt="My Page">
+  </div>
+  <a href="https://amzn.in/d/70mmT0f" target="_blank">Vist the vivo store</a>
+  <p>Vivo V60 5G/Mist Gray,<br>
+  12GB RAM, 256GB storage with no cost EMI/Additional Exchange Offers</p>
+  <hr>
+  <p>
+    Style name:<span>With exchange bonus or No cost EMI</Span><br>
+    colour:<span>Mist Grey</span>
+  </p>
+  <hr>
+  <div class="content">
+    <div class="box">
+      <img src="image4.jpg" alt="mobile 1">
+      <p>Vivo v 60</p>
+    </div>
+    <div class="box">
+      <img src="image2.jpg" alt="mobile2">
+      <p>Vivo v50 </p>
+    </div>
+    <div class="box">
+      <img src="image3.jpg" alt="mobile 3">
+      <p>Vivo v40</p>
+    </div>
+  </div>
+  <p>
+  <span id ="style2">-11%</span>
+    <sup>₹</sup>40,999</p>
+  <p id="style4"> M.R.P: ₹45,999</p>
+    
+    <p id="emi">EMI from Starts at ₹1978.No cost EMI available</p>
+    <section>
+      <label for ="emi">EMI options:</label>
+        <select id="emi-options" name="emi">
+          <option value="">--Choose emi--</option>
+          <option value="Amazon pay">AMAZON PAY</option>
+          <option value="icici">ICICI</option>
+          <option value="upi">UPI</option>
+        </select>
+    </section>
+    <br>
+    <div class="big-box">
+      <div class="row"><span class="highlight">Save extra:</span>with 6 offers</div>
+      <div class="row"><span class="highlight">No cost EMI(2):</span>upto ₹2823.45 EMI interest savings on select credit cards</div>
+      <div class="row"><span class="highlight">Bank offer(6):</span>Upto ₹4000 discount on select credit cards</div>
+    </div>
+        <p> Free Delivery <span class="delivery">20-28 August</span>
+        
+        
+    <br>
+    <br>
+    <a href="See my real-time location on Maps: https://maps.app.goo.gl/DjP5Jw1GomEBiwfs6">Delivery to the New Delhi 110059</a>
+    <p> <span class="deli2">This item will be released on August 19<br>2025.</span></p>
+    <p> <span class="sty">Pre-order now.</span></p>
+    <div class="conatiner2">
+      <select class="custom">
+        <option value=""disabled selected>Quantity</option>
+        <option value="none">none</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    </div>
+    <div class="conatiner3">
+      <div class="order2">Pre order now</div>
+    </div>
+    <div id="container4">
+      <div id="item1">Ships from</div>
+      <div id="item2"> <a href="https://share.google/JOhG7OoA5eugMDVfGl">Amazon</a></div>
+      <div id="item3">Sold by</div>
+      <div id="item4">Clicktech retail Private ltd</div>
+    </div>
+    <label class="Checkbox-label">
+      <input type="checkbox">
+      Send as a gift.include custom message
+    </label>
+    <hr>
+    <h2>Shop with confidence</h2>
+
+
+<div id="container">
+  <div id="box">10 days Service center replacement</div>
+  <div id="box2">free delivery</div>
+  <div id="box3">1 Year Warranty</div>
+  <div id="box4">Cash/Pay on delivery</div>
+  <div id="box5">Top Brand</div>
+  <div id="box6">Amazon delivery</div> 
+  <div id="box7">Secure transaction</div>
+  <div id="box8"></div>
+</div>
+<hr>
+<h3>Product details</h3>
+<hr>
+<h4>Top highlights</h4>
+<table>
+  <ul>
+    <li>CAMERA]: Rear Camera: 50 MP Zeiss OIS Main Camera: OIS; f/1.88; FOV 84°; 6P lens, 50 MP Zeiss Super Telephoto Camera: AF; OIS, f/2.65, FoV 33.1°, 4P lens 10X Telephoto Stage Portrait, 8 MP ZEISS Ultra Wide-Angle camera: f2.0, FoV 120° ± 3, 5P lens | Front Camera: 50 MP ZEISS Group Selfie Camera: AF, f/2.2, FoV 92° ± 3°, 5P lens | 4K/1080P/720P Video Recording Resolution</li><br>
+    <li>SCREEN & DISPLAY]: 17.20 cm (6.77" inch) Slim Quad Curved AMOLED capacitive multi-touch Display | P3 wide colour gamut supported | 387 ppi high pixel density| 5000 nits peak local brightness | certified by SGS for Low Blue Light | 2392 X 1080 resolution</li><br>
+    <li>MEMORY & SIM]: 12GB RAM | 512GB Internal Memory | LPDDR4X | UFS 2.2 | Bluetooth 5.4 | USB 2.0 | 5G + 5G Dual SIM Dual Standby</li><br>
+    <li>[BATTERY]: 6500 mAh battery | Li-ion battery</li><br>
+    <li>[FAST CHARGING]: 90W Flash Charge | USB 2.0</li><br>
+    <li>[AI]: AI Personal Assistant (AI Captions & AI Smart Call Assistant) | Gemini- Connected Apps & Gemini Live</li><br>
+    <li>[IP RATING}: Top-grade IP68 and IP69 water resistance allowing it to be submerged in still fresh water up to 1.5 meters deep for up to 120 minutes</li><br>
+    <li>[SECURITY]: In-display optical fingerprint sensor for maximum security of your data</li><br>
+    <li>[PROCESSOR]: Snapdragon 7 Gen 4 Mobile Platform | 4 nm process node | Funtouch OS 15</li><br>
+    <li>[SCENE MODE]: FRONT CAMERA: Photo, Portrait, Night, Video, Micro Movie, High resolution, Dual View | REAR CAMERA: Photo, Portrait, Night, Video, Micro Movie, High resolution, Pano, Ultra HD Document, Slo-mo, Time-lapse, Supermoon, Astro, Pro, Snapshot, Food, Underwater Photography, Dual View, Film Camera</li><br>
+    
+    
+  </ul>
+</table>
+</main>
 </body>
 </html>
